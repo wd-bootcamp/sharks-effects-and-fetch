@@ -7,7 +7,7 @@ export default function Joke() {
     useEffect(() => {
         const startFetching = async () => {
             const response = await fetch(
-                `https://example-apis.vercel.app/api/bad-jokes/0`
+                `https://example-apis.vercel.app/api/bad-jokes/${id}`
             );
             const data = await response.json();
             setJoke(data);
